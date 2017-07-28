@@ -1,0 +1,39 @@
+// Popup style
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  box-shadow: 0 0 20px 0 rgba($black, .2), 0 5px 5px 0 rgba($black, .24);
+  z-index: 1050;
+
+
+  &-head {
+    position: relative;
+    padding: 15px;
+
+    h3 {
+      margin: 0;
+    }
+
+    .close {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      width: 25px;
+      height: 25px;
+      transform: translate(0,-50%);
+
+      &:hover {
+
+      }
+    }
+  }
+
+  &-body {
+    padding: 15px;
+  }
+
+}

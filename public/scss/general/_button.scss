@@ -1,0 +1,35 @@
+button {
+  &.close {
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: 0;
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 12px 16px;
+  background-color: transparent;
+  border: none {
+    width: 1px;
+    style: solid;
+  }
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+  font-family: $base-font-family;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none 0;
+  vertical-align: middle;
+  font-size: 1rem;
+  transition: all 350ms ease-in-out 0s;
+  @extend %no-select;
+}

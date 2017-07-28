@@ -1,0 +1,29 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  will-change: transform;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+
+  a {
+    color: #000;
+    font-size: 48px;
+    padding: 20px 55px;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+  }
+}

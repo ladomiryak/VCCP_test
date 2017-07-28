@@ -1,0 +1,70 @@
+// General variables ----
+$default-fonts   : "Roboto", Arial, sans-serif;
+$extra-font   : "Gotham", Arial, sans-serif;
+$base-font-name : 'Roboto';
+$extra-font-name : 'Gotham';
+// ----------------------
+
+// Fonts path -----------
+$font-path: '../fonts/';
+$base-font-path  : 'Roboto/';
+$extra-font-path  : 'gotham/';
+// ----------------------
+
+// Fonts file count -----
+$base-font-count  : 4;
+$extra-font-count : 4;
+$base-font-count : 3;
+// ----------------------
+
+// Fonts files ----------
+$base-font-file  : (
+        1: 'Roboto-Regular',
+        2: 'Roboto-Medium',
+        3: 'Roboto-Bold',
+        4: 'Roboto-Heavy'
+);
+
+// Fonts files ----------
+$extra-font-file  : (
+        1: 'GothamPro',
+        2: 'GothamPro-Medium',
+        3: 'GothamPro-Bold',
+        4: 'GothamPro-Black',
+);
+// ----------------------
+
+// Fonts local name -----
+$base-font-local-1  : (
+        1: 'Roboto',
+        2: 'Roboto-Medium',
+        3: 'Roboto-Bold',
+        4: 'Roboto-Heavy'
+);
+$extra-font-local-1  : (
+        1: 'GothamPro',
+        2: 'GothamPro-Medium',
+        3: 'GothamPro-Bold',
+        4: 'GothamPro-Black',
+);
+// ----------------------
+
+// Fonts weight ---------
+$base-font-weight  : (
+        1: 400,
+        2: 500,
+        3: 700,
+        4: 900,
+);
+$extra-font-weight  : (
+        1: 400,
+        2: 500,
+        3: 700,
+        4: 900
+);
+
+// ----------------------
+
+// Fonts family variables
+$base-font-family  : $base-font-name, $default-fonts !default;
+$extra-font-family  : $extra-font-name, $extra-font !default;

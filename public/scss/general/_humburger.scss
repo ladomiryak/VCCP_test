@@ -1,0 +1,92 @@
+// hum
+
+.btn_hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  height: 25px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  width: 30px;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .15s linear .15s;
+  z-index: 15;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    bottom: -20px;
+    left: -15px;
+    background: transparent;
+  }
+
+  &_icon {
+    top: auto;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 30px;
+    background: $white;
+    transition-property: transform;
+    transition-delay: .15s;
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-duration: .15s;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: $white;
+      transition: transform .15s ease;
+    }
+    &:before {
+      top: -8px;
+      transition: top .12s .3s cubic-bezier(.33333,.66667,.66667,1),
+      transform .15s cubic-bezier(.55,.055,.675,.19);
+    }
+    &:after {
+      top: -16px;
+      bottom: -10px;
+      transition-property: bottom, transform;
+      transition: top .3s .3s cubic-bezier(.33333,.66667,.66667,1),opacity .1s linear;
+    }
+  }
+
+  &.active {
+
+    .btn_hamburger_icon {
+      transform: translate3d(0,-10px,0) rotate(-45deg);
+      transition-delay: .32s;
+      transition-timing-function: cubic-bezier(.215,.61,.355,1);
+
+      &:before {
+        top: 0;
+        transform: rotate(-90deg);
+        transition: top .12s .18s cubic-bezier(.33333,0,.66667,.33333),
+        transform .15s .42s cubic-bezier(.215,.61,.355,1);
+      }
+
+      &:after {
+        top: 0;
+        transition: top .3s cubic-bezier(.33333,0,.66667,.33333),opacity .1s .27s linear;
+      }
+    }
+  }
+
+  @media (min-width: 768px){
+    display: none;
+  }
+}
